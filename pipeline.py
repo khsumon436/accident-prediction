@@ -30,7 +30,7 @@ def pred(Day_of_week, Age_band_of_driver, Sex_of_driver, Educational_level, Vehi
 
 # create streamlit app==================================================================================================
 # load pipe and image
-pipe = pickle.load(open('10 pipe.pkl','rb'))
+pipe = joblib.load("10_pipe_compressed.pkl")
 img = Image.open('10 pipe img.png')
 
 
